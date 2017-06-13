@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  <!-- 设置实体的构建路径  id是对象名 class是完整的包和类名 -->
+	<bean id="blog" class="com.entity.Blog" >
+	<!-- 给实体属性赋值，注入-->
+		<property name="blogid" value="1" />
+		<property name="blogtitle" value="hahahh" />
+	</bean>
+	<!-- 设置BlogDao -->
+	<bean id="blogdao" class="com.daoimpl.BlogDaoImpl">
+	
+	</bean>
+	
+	
+	<!-- setter设置BlogService -->
+	<bean id="bs" class="com.serviceimpl.BlogServiceImpl">
+	   <property name="bd" ref="blogdao"></property>
+	</bean>
+	
+	<!--construction设置BlogService -->
+	<bean id="bs" class="com.serviceimpl.BlogServiceImpl"
+	
+	
+
+</beans>
