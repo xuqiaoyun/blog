@@ -1,15 +1,10 @@
 package entity;
 
 public class Blog {
-	private int bid;
+	private String bid;
 	private String bname;
 	private String bcontent;
-	public Blog(int bid, String bname, String bcontent) {
-		super();
-		this.bid = bid;
-		this.bname = bname;
-		this.bcontent = bcontent;
-	}
+	
 	
 	public Blog(String bname, String bcontent) {
 		super();
@@ -24,11 +19,11 @@ public class Blog {
 
 	
 
-	public int getBid() {
+	public String getBid() {
 		return bid;
 	}
 
-	public void setBid(int bid) {
+	public void setBid(String bid) {
 		this.bid = bid;
 	}
 
