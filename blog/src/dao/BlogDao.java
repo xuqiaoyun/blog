@@ -17,7 +17,7 @@ public class BlogDao {
 		
 		
 		//qqqqqq
-				public boolean addBlogByNAme(Blog b){
+				public boolean addBlogByPage(Blog b){
 					return BaseDao.execute("insert into tbl_blog values(null,?,?)",
 							b.getBname(),b.getBcontent())>0;
 				}
