@@ -1,7 +1,7 @@
 package entity;
 
 public class Blog {
-	private int bid;
+	private int aaaaa;
 	private String bname;
 	private String bcontent;
 	
@@ -20,11 +20,11 @@ public class Blog {
 	
 
 	public int getBid() {
-		return bid;
+		return aaaaa;
 	}
 
 	public void setBid(int bid) {
-		this.bid = bid;
+		this.aaaaa = bid;
 	}
 
 	public String getBname() {
@@ -45,7 +45,7 @@ public class Blog {
 	
 	@Override
 	public String toString() {
-		return "Blog [bid=" + bid + ", bname=" + bname + ", bcontent="
+		return "Blog [bid=" + aaaaa + ", bname=" + bname + ", bcontent="
 				+ bcontent + "]/n";
 	}
 	
