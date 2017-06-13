@@ -1,11 +1,28 @@
 package entity;
 
 public class Blog {
-	private int aaaaa;
+	private int b2b;
 	private String bname;
 	private String bcontent;
+	private int abc;
 	
 	
+	public int getAaaaa() {
+		return b2b;
+	}
+
+	public void setAaaaa(int aaaaa) {
+		this.b2b = aaaaa;
+	}
+
+	public int getAbc() {
+		return abc;
+	}
+
+	public void setAbc(int abc) {
+		this.abc = abc;
+	}
+
 	public Blog(String bname, String bcontent) {
 		super();
 		this.bname = bname;
@@ -20,11 +37,11 @@ public class Blog {
 	
 
 	public int getBid() {
-		return aaaaa;
+		return b2b;
 	}
 
 	public void setBid(int bid) {
-		this.aaaaa = bid;
+		this.b2b = bid;
 	}
 
 	public String getBname() {
@@ -45,7 +62,7 @@ public class Blog {
 	
 	@Override
 	public String toString() {
-		return "Blog [bid=" + aaaaa + ", bname=" + bname + ", bcontent="
+		return "Blog [bid=" + b2b + ", bname=" + bname + ", bcontent="
 				+ bcontent + "]/n";
 	}
 	
