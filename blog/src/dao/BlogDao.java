@@ -15,6 +15,13 @@ public class BlogDao {
 					b.getBname(),b.getBcontent())>0;
 		}
 		
+		
+		//qqqqqq
+				public boolean addBlogByNAme(Blog b){
+					return BaseDao.execute("insert into tbl_blog values(null,?,?)",
+							b.getBname(),b.getBcontent())>0;
+				}
+		
 		//ВщевЫљга
 		@SuppressWarnings("unchecked")
 		public List<Blog> queryAll(){
