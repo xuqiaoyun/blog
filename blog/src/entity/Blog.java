@@ -1,7 +1,7 @@
 package entity;
 
 public class Blog {
-	private String bid;
+	private int bid;
 	private String bname;
 	private String bcontent;
 	
@@ -19,11 +19,11 @@ public class Blog {
 
 	
 
-	public String getBid() {
+	public int getBid() {
 		return bid;
 	}
 
-	public void setBid(String bid) {
+	public void setBid(int bid) {
 		this.bid = bid;
 	}
 
